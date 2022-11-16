@@ -8,7 +8,7 @@ const port = 9000
 
 const app = express()
 
-app.get('/about-me', (peticion, respuesta) => {
+app.get('/profile', (peticion, respuesta) => {
     respuesta.json({
         name: 'Ivan Polanco',
         age: 24,
@@ -16,13 +16,13 @@ app.get('/about-me', (peticion, respuesta) => {
     })
 })
 
-app.delete('/about-me', (peticion, respuesta) => {
+app.delete('/ejemplo', (peticion, respuesta) => {
     respuesta.json({
         Empresas: ['Nintendo', 'Microsoft', 'Amazon']
     })
 })
 
-app.patch('/about-me', (peticion, respuesta) => {
+app.patch('/ejemplo', (peticion, respuesta) => {
     respuesta.json({
         hobbies: ['Leer', 'manga/anime', 'Boxeo']
     })
